@@ -17,4 +17,9 @@ export default class Dino{
             request.send();
         });
     }
+    addGuess(array) {
+        console.log(this);
+        array.forEach(function(thing) {
+          this.guess.push(thing);
+        });
 }
